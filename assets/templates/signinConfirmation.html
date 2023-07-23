@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=100%, initial-scale=1.0">
+    <title>Kinnar</title>
+    <style type="text/css">
+        .header {
+            background-color: black;
+            width: 100%;
+            height: 60px;
+        }
+
+        .title {
+            position: absolute;
+            color: white;
+            font-weight: bold;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 36px;
+            padding-top: 10px;
+            padding-left: 50px;
+        }
+
+        .body {
+            display: flex;
+            width: 100%;
+            height: 400px;
+            text-align: center;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            align-content: center;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .wellcome {
+            color: black;
+            font-size: 36px;
+        }
+
+        .linkmessage {
+            padding-top: 40px;
+            font-size: large;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .link {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            padding-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <svg width="58px" height="58px" viewBox="0 0 58 58" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <image width="100" height="100" xlink:href="data:image/png;base64,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" id="img_1" />
+            </defs>
+            <use xlink:href="#img_1" fill="#FFFFFF" stroke="none" transform="scale(0.58 0.58)" />
+        </svg>
+        <label class="title">Kinnar</label>
+    </div>
+    <div class="body">
+        <label class="wellcome">Wellcome to Kinnar !</label>
+        <label class="linkmessage">{{MESSAGE}}</label>
+    </div>
+</body>
+
+</html>
